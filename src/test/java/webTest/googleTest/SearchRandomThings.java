@@ -8,8 +8,9 @@ import static libs.Utils.waitABit;
 public class SearchRandomThings extends ParentTest {
 
     @Test
-    public void searchRandomThings(){
-        googlePage.mainScript();
+    public void searchRandomThings() throws Exception {
+        googlePage.openPage("google.com");
+
         waitABit(10);
     }
 }

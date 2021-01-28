@@ -1,0 +1,7 @@
+{
+  "url":"google.com",
+  "action":"enterTextToElement",
+  "typeLocator":"name",
+  "locator":"q",
+  "data":"some Test text"
+}

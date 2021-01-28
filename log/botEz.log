@@ -89,3 +89,268 @@
 2021-22-01 17:58:12   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
 2021-22-01 17:58:14   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
 2021-22-01 17:58:26   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-25-01 15:50:29   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-25-01 15:50:33   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-25-01 15:50:44   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-25-01 17:07:16   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-25-01 17:07:18   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-25-01 17:07:19   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-25-01 17:21:59   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-25-01 17:22:01   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-25-01 17:22:12   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-25-01 17:24:15   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-25-01 17:24:17   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-25-01 17:24:28   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-25-01 17:39:32   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-25-01 17:39:34   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-25-01 17:39:35   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-25-01 17:41:24   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-25-01 17:41:26   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-25-01 17:41:27   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-25-01 17:45:17   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-25-01 17:45:19   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-25-01 17:45:20   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-25-01 17:46:34   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-25-01 17:46:36   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-25-01 17:46:37   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-25-01 17:47:08   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-25-01 17:47:11   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-25-01 17:47:21   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-25-01 17:56:31   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-25-01 17:56:34   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-25-01 17:56:44   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 13:03:17   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 13:03:19   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 13:03:20   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 13:04:00   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 13:04:02   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 13:04:03   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 13:09:06   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 13:09:08   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 13:09:09   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 13:18:00   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 13:18:03   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 13:18:03   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 13:18:37   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 13:18:39   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 13:18:40   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 13:32:04   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 13:32:06   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 13:32:17   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 13:45:03   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 13:45:05   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 13:45:16   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 13:50:08   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 13:50:10   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 13:50:21   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 13:58:49   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 13:58:51   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 13:58:51  ERROR [pages.GooglePage] : Our doesn't opened
+2021-26-01 13:59:02   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 14:00:16   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 14:00:18   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 14:00:18  ERROR [pages.GooglePage] : Our doesn't opened
+2021-26-01 14:00:29   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 14:01:50   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 14:01:52   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 14:01:53   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 14:02:50   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 14:02:53   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 14:02:53   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 14:04:22   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 14:04:24   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 14:04:24  ERROR [pages.GooglePage] : Our page not opened
+2021-26-01 14:04:35   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 14:56:23   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 14:56:26   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 14:56:36   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 15:11:01   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 15:11:03   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 15:11:04   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 15:16:20   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 15:16:22   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 15:16:33   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 15:17:32   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 15:17:34   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 15:17:45   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 15:33:47   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 15:33:49   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 15:33:50   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 15:36:31   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 15:36:33   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 15:36:45   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 15:37:49   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 15:37:51   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 15:38:03   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 15:45:56   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 15:45:58   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 15:45:59   INFO [pages.GooglePage] : Invalid action
+2021-26-01 15:46:10   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 15:47:23   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 15:47:25   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 15:47:26   INFO [pages.GooglePage] : Invalid action
+2021-26-01 15:47:37   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 15:48:10   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 15:48:13   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 15:48:13  ERROR [libs.ActionsWithWebElements] : Cannot work with element java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+2021-26-01 15:48:24   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 15:52:07   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 15:52:09   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 15:52:10  ERROR [libs.ActionsWithWebElements] : Cannot work with element java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+2021-26-01 15:52:20   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 15:52:45   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 15:52:47   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 15:52:48   INFO [libs.ActionsWithWebElements] : some Test text was inputted into element
+2021-26-01 15:52:59   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 16:15:59   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 16:16:01   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 16:16:01   INFO [pages.GooglePage] : Url is failed
+2021-26-01 16:16:01   INFO [pages.GooglePage] : test going on
+2021-26-01 16:36:53   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 16:36:55   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 16:36:55   INFO [pages.GooglePage] : Url is failed
+2021-26-01 16:36:55   INFO [pages.GooglePage] : Test going on
+2021-26-01 16:37:16   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 16:43:09   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 16:43:11   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 16:43:22   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 16:50:03   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 16:50:05   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 16:50:07   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 16:50:46   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 16:50:48   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 16:50:59   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 16:53:15   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 16:53:17   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 16:53:28   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 16:53:59   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 16:54:02   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 16:54:13   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 17:02:13   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 17:02:15   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 17:02:26   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 17:24:15   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 17:24:17   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 17:24:28   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 17:30:38   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 17:30:40   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 17:31:07   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 17:31:09   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 17:44:36   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 17:44:38   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 17:44:49   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 17:45:02   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 17:45:04   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 17:45:15   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 17:58:55   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 17:58:57   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 17:59:08   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 18:09:34   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 18:09:36   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 18:12:36   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 18:12:39   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 18:12:49   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 18:21:49   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 18:21:51   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 18:22:02   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-26-01 18:25:07   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-26-01 18:25:09   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-26-01 18:25:20   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-27-01 11:35:22   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 11:35:25   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 11:36:50   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 11:36:52   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 11:37:03   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-27-01 11:47:02   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 11:47:04   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 11:47:16   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-27-01 11:47:48   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 11:47:50   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 11:53:42   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 11:53:44   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 11:53:55   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-27-01 11:54:45   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 11:54:47   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 11:54:58   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-27-01 15:20:43   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 15:20:46   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 15:20:57   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-27-01 15:24:57   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 15:24:59   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 15:25:10   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-27-01 15:38:10   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 15:38:12   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 15:38:23   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-27-01 15:38:43   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 15:38:45   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 15:39:05   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 15:39:07   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 15:39:18   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-27-01 15:40:27   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 15:40:29   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 15:40:40   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-27-01 15:42:57   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 15:42:59   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 15:43:42   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 15:43:44   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 15:43:55   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-27-01 15:44:19   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 15:44:21   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 15:44:32   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-27-01 15:45:33   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 15:45:35   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 15:45:46   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-27-01 15:47:00   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 15:47:02   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 15:47:17   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 15:47:19   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 15:47:30   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-27-01 15:48:54   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 15:48:56   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 15:49:07   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-27-01 15:49:33   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-27-01 15:49:35   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-27-01 15:49:46   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-28-01 10:07:15   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-28-01 10:07:17   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-28-01 10:07:17  ERROR [pages.GooglePage] : Our doesn't opened
+2021-28-01 10:07:38   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-28-01 10:10:56   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-28-01 10:10:59   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-28-01 10:10:59  ERROR [pages.GooglePage] : Our doesn't opened
+2021-28-01 10:11:19   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-28-01 10:12:10   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-28-01 10:12:12   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-28-01 10:12:12  ERROR [pages.GooglePage] : Our page doesn't opened
+2021-28-01 10:14:46   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-28-01 10:14:48   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-28-01 10:14:48  ERROR [pages.GooglePage] : Our page doesn't opened
+2021-28-01 10:15:09   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-28-01 10:15:35   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-28-01 10:15:37   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-28-01 10:15:38   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-28-01 10:16:45   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-28-01 10:16:47   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-28-01 10:16:48   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-28-01 10:19:08   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-28-01 10:19:10   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-28-01 10:19:11   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-28-01 10:19:36   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-28-01 10:19:38   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-28-01 10:19:39   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-28-01 10:20:52   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-28-01 10:20:54   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-28-01 10:20:55  ERROR [pages.GooglePage] : Our page doesn't opened
+2021-28-01 10:20:55   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-28-01 10:22:25   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-28-01 10:22:27   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-28-01 10:22:27  ERROR [pages.GooglePage] : Our page doesn't opened
+2021-28-01 10:22:48   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-28-01 10:25:21   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-28-01 10:25:23   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-28-01 10:25:23  ERROR [pages.GooglePage] : Our page doesn't opened
+2021-28-01 10:25:44   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-28-01 10:26:33   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-28-01 10:26:35   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-28-01 10:26:35  ERROR [pages.GooglePage] : Our page doesn't opened
+2021-28-01 10:26:46   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
