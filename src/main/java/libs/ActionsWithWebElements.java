@@ -34,9 +34,10 @@ public class ActionsWithWebElements {
     private void printErrorAndStopTest(Exception e) {
         logger.error("Cannot work with element " + e);
     }
+
     public void enterTextToElement(WebElement webElement, String text){
         try{
-            webDriverWait20.until(ExpectedConditions.visibilityOf(webElement));
+            webDriverWait40.until(ExpectedConditions.elementToBeClickable(webElement));
             webElement.clear();
             webElement.sendKeys(text);
             logger.info(text + " was inputted into element");
@@ -46,6 +47,7 @@ public class ActionsWithWebElements {
     }
     public void sendEnterKey(WebElement webElement){
         try {
+            webDriverWait20.until(ExpectedConditions.visibilityOf(webElement));
             webElement.sendKeys(Keys.ENTER);
             logger.info("Enter was click");
         } catch (Exception e){

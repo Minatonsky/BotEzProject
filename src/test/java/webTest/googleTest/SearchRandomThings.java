@@ -9,8 +9,7 @@ public class SearchRandomThings extends ParentTest {
 
     @Test
     public void searchRandomThings() throws Exception {
-        googlePage.openPage("google.com");
-
+        workPage.handleWithChildJSONObject();
         waitABit(10);
     }
 }

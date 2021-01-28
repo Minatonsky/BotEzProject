@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import pages.GooglePage;
+import pages.WorkPage;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -24,7 +24,7 @@ public class ParentTest {
     Logger logger = Logger.getLogger(getClass());
     WebDriver webDriver;
     protected Faker faker;
-    protected GooglePage googlePage;
+    protected WorkPage workPage;
 
     String browser = System.getProperty("browser");
 
@@ -34,7 +34,7 @@ public class ParentTest {
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, SECONDS);
         faker = new Faker();
-        googlePage = new GooglePage(webDriver);
+        workPage = new WorkPage(webDriver);
     }
 
     @After
