@@ -65,6 +65,5 @@ public class WorkPage extends ParentPage {
         }
     }
 
-
 }
 

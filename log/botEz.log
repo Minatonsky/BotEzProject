@@ -486,3 +486,13 @@ Session ID: 4a4d6973b817aaeab85304668d18b26c
 2021-28-01 15:36:57   INFO [libs.ActionsWithWebElements] : Cats was inputted into element
 2021-28-01 15:36:59   INFO [libs.ActionsWithWebElements] : Enter was click
 2021-28-01 15:37:09   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-29-01 14:12:30   INFO [webTest.googleTest.SearchRandomThings] : Remote Driver will be started
+2021-29-01 14:16:59   INFO [webTest.googleTest.SearchRandomThings] : Remote Driver will be started
+2021-29-01 14:18:21   INFO [webTest.googleTest.SearchRandomThings] : Remote Driver will be started
+2021-29-01 15:14:48   INFO [webTest.googleTest.SearchRandomThings] : Remote Driver will be started
+2021-29-01 15:22:36   INFO [webTest.googleTest.SearchRandomThings] : Remote Driver will be started
+2021-29-01 17:54:33   INFO [webTest.googleTest.SearchRandomThings] : ChromeHeadless will be started
+2021-29-01 17:54:35   INFO [webTest.googleTest.SearchRandomThings] : ChromeHeadless is started
+2021-29-01 17:54:36   INFO [libs.ActionsWithWebElements] : Cats was inputted into element
+2021-29-01 17:54:38   INFO [libs.ActionsWithWebElements] : Enter was click
+2021-29-01 17:54:49   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed

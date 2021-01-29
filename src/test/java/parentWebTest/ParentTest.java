@@ -6,12 +6,15 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.openqa.selenium.PageLoadStrategy;
+import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import java.net.MalformedURLException;
+import java.net.URL;
 import pages.WorkPage;
 
 import java.io.File;
@@ -26,7 +29,7 @@ public class ParentTest {
     protected Faker faker;
     protected WorkPage workPage;
 
-    String browser = System.getProperty("browser");
+    String browser = "ChromeHeadless"; // System.getProperty("browser");
 
     @Before
     public void setUp(){
@@ -50,14 +53,31 @@ public class ParentTest {
             System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
             ChromeOptions options = new ChromeOptions();
             options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-            options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
+            options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
             options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
             webDriver = new ChromeDriver(options);
             logger.info("Chrome is started");
+        }else if ("ChromeHeadless".equals(browserName)){
+            logger.info("ChromeHeadless will be started");
+            File file = new File("./src/drivers/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("headless");
+            options.addArguments("window-size=1200x600");
+            options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+            options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+            options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+            webDriver = new ChromeDriver(options);
+            logger.info("ChromeHeadless is started");
 
         } else if ("remote".equals(browser)){
             logger.info("Remote Driver will be started");
             try {
+//                ChromeOptions cap = new ChromeOptions();
+//                cap.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR,
+//                        UnexpectedAlertBehaviour.IGNORE);
+
+//                webDriver = new RemoteWebDriver(new URL("http://hub:4444/wd/hub"),cap);
                 webDriver = new RemoteWebDriver(
                         new URL("http://localhost:4444/wd/hub"),
                         DesiredCapabilities.chrome());
