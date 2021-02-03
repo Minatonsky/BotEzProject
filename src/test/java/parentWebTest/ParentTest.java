@@ -29,7 +29,7 @@ public class ParentTest {
     protected Faker faker;
     protected WorkPage workPage;
 
-    String browser = "ChromeHeadless"; // System.getProperty("browser");
+    String browser; // System.getProperty("browser");
 
     @Before
     public void setUp(){
