@@ -507,3 +507,35 @@ Session ID: 4a4d6973b817aaeab85304668d18b26c
 2021-02-02 17:32:57   INFO [libs.ActionsWithWebElements] : Cats was inputted into element
 2021-02-02 17:32:59   INFO [libs.ActionsWithWebElements] : Enter was click
 2021-02-02 17:33:10   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-08-02 10:42:48   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-08-02 10:42:54   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-08-02 10:42:55   INFO [libs.ActionsWithWebElements] : Cats was inputted into element
+2021-08-02 10:42:58   INFO [libs.ActionsWithWebElements] : Enter was click
+2021-08-02 10:43:08   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-08-02 12:29:05   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-08-02 12:29:07   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-08-02 12:29:08   INFO [libs.ActionsWithWebElements] : Cats was inputted into element
+2021-08-02 12:29:11   INFO [libs.ActionsWithWebElements] : Enter was click
+2021-08-02 12:48:28   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-08-02 12:48:30   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-08-02 12:48:31   INFO [libs.ActionsWithWebElements] : Cats was inputted into element
+2021-08-02 12:48:33   INFO [libs.ActionsWithWebElements] : Enter was click
+2021-08-02 13:46:54   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-08-02 13:46:57   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-08-02 13:46:58   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-08-02 15:30:46   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-08-02 15:30:48   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-08-02 15:30:49   INFO [libs.ActionsWithWebElements] : Cats was inputted into element
+2021-08-02 15:32:40   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-08-02 15:32:42   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-08-02 15:32:44   INFO [libs.ActionsWithWebElements] : Cats was inputted into element
+2021-08-02 15:32:46   INFO [libs.ActionsWithWebElements] : Enter was click
+2021-08-02 15:32:56   INFO [webTest.googleTest.SearchRandomThings] : Chrome closed
+2021-08-02 16:14:31   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-08-02 16:14:33   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-08-02 16:14:35   INFO [libs.ActionsWithWebElements] : Cats was inputted into element
+2021-08-02 16:14:37   INFO [libs.ActionsWithWebElements] : Enter was click
+2021-08-02 17:00:40   INFO [webTest.googleTest.SearchRandomThings] : Chrome will be started
+2021-08-02 17:00:42   INFO [webTest.googleTest.SearchRandomThings] : Chrome is started
+2021-08-02 17:00:43   INFO [libs.ActionsWithWebElements] : Cats was inputted into element
+2021-08-02 17:00:45   INFO [libs.ActionsWithWebElements] : Enter was click

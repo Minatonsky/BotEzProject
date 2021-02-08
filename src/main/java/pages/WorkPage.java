@@ -12,7 +12,7 @@ import java.io.IOException;
 
 public class WorkPage extends ParentPage {
 
-    static String jPath = "C:\\BotEzProject\\src\\data.json";
+    static String jPath = "src/data.json";
 
     private String url;
     private String action;

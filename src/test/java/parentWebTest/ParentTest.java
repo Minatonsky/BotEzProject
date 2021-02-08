@@ -1,12 +1,11 @@
 package parentWebTest;
 
-import com.github.javafaker.Faker;
+
 import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.openqa.selenium.PageLoadStrategy;
-import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -18,16 +17,14 @@ import java.net.URL;
 import pages.WorkPage;
 
 import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
+
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class ParentTest {
     Logger logger = Logger.getLogger(getClass());
     WebDriver webDriver;
-    protected Faker faker;
-    protected WorkPage workPage;
+    public WorkPage workPage;
 
     String browser; // System.getProperty("browser");
 
@@ -36,7 +33,6 @@ public class ParentTest {
         initDriver(browser);
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, SECONDS);
-        faker = new Faker();
         workPage = new WorkPage(webDriver);
     }
 
@@ -73,11 +69,6 @@ public class ParentTest {
         } else if ("remote".equals(browser)){
             logger.info("Remote Driver will be started");
             try {
-//                ChromeOptions cap = new ChromeOptions();
-//                cap.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR,
-//                        UnexpectedAlertBehaviour.IGNORE);
-
-//                webDriver = new RemoteWebDriver(new URL("http://hub:4444/wd/hub"),cap);
                 webDriver = new RemoteWebDriver(
                         new URL("http://localhost:4444/wd/hub"),
                         DesiredCapabilities.chrome());
