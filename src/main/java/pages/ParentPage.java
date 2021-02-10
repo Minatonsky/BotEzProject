@@ -27,22 +27,6 @@ public class ParentPage {
             logger.error("Our page doesn't opened");
         }
     }
-    public WebElement findWebElement(String typeLocator, String locator){
-        switch (typeLocator){
-            case "name": return webDriver.findElement(By.name(locator));
-            case "id": return webDriver.findElement(By.id(locator));
-            default: return webDriver.findElement(By.xpath(locator));
-        }
-    }
-    public void doAction(String action, String typeLocator, String locator, String text){
-        switch (action){
-            case "enterTextToElement": actionsWithWebElements.enterTextToElement(findWebElement(typeLocator, locator), text);
-                break;
-            case "sendEnterKey": actionsWithWebElements.sendEnterKey(findWebElement(typeLocator, locator));
-                break;
-            default: logger.info("Invalid action");
-        }
-    }
 
 
 

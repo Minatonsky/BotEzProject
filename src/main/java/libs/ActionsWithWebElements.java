@@ -41,8 +41,7 @@ public class ActionsWithWebElements {
 
     public void enterTextToElement(WebElement webElement, String text){
         try{
-            webDriverWait40.until(ExpectedConditions.elementToBeClickable(webElement));
-            webElement.clear();
+            webDriverWait20.until(ExpectedConditions.visibilityOf(webElement));
             webElement.sendKeys(text);
             logger.info(text + " was inputted into element");
         } catch (Exception e){
@@ -54,6 +53,15 @@ public class ActionsWithWebElements {
             webDriverWait20.until(ExpectedConditions.visibilityOf(webElement));
             webElement.sendKeys(Keys.ENTER);
             logger.info("Enter was click");
+        } catch (Exception e){
+            printErrorAndStopTest(e);
+        }
+    }
+    public void sendKeys(WebElement webElement, String keys){
+        try {
+            webDriverWait20.until(ExpectedConditions.visibilityOf(webElement));
+            webElement.sendKeys(keys);
+            logger.info("Keys was enter");
         } catch (Exception e){
             printErrorAndStopTest(e);
         }
@@ -253,7 +261,8 @@ public class ActionsWithWebElements {
     public void addFileByJs(WebElement webElement, String path){
         try{
             JavascriptExecutor js = (JavascriptExecutor) webDriver;
-            js.executeScript("arguments[0].setAttribute('style', arguments[1])", webElement, "0");
+            js.executeScript("arguments[0].setAttribute('style', arguments[1])",webDriver.findElement(By.xpath("//input[@type='file']")), "0");
+            js.executeScript("arguments[0].setAttribute('class', arguments[1])", webDriver.findElement(By.xpath("//input[@accept='image/*,image/heif,image/heic']/../div[@role='button'][1]")), "a");
             webElement.sendKeys(path);
         } catch (Exception e){
             printErrorAndStopTest(e);

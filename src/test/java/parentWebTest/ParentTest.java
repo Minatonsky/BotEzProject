@@ -1,6 +1,7 @@
 package parentWebTest;
 
 
+import com.sun.javafx.collections.MappingChange;
 import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Assert;
@@ -14,9 +15,13 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
+
+import pages.FacebookPage;
 import pages.WorkPage;
 
 import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
 
 import static java.util.concurrent.TimeUnit.SECONDS;
@@ -24,9 +29,11 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 public class ParentTest {
     Logger logger = Logger.getLogger(getClass());
     WebDriver webDriver;
-    public WorkPage workPage;
+    protected WorkPage workPage;
+    protected FacebookPage facebookPage;
 
     String browser; // System.getProperty("browser");
+    Map<String, Object> prefs = new HashMap<String, Object>();
 
     @Before
     public void setUp(){
@@ -34,6 +41,7 @@ public class ParentTest {
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, SECONDS);
         workPage = new WorkPage(webDriver);
+        facebookPage = new FacebookPage(webDriver);
     }
 
     @After
@@ -44,13 +52,16 @@ public class ParentTest {
 
     private void initDriver(String browserName) {
         if ( browserName == null || browserName.equals("chrome")) {
+
             logger.info("Chrome will be started");
             File file = new File("./src/drivers/chromedriver.exe");
             System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
             ChromeOptions options = new ChromeOptions();
             options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-            options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
-            options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+//            options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+//            options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+            prefs.put("profile.default_content_setting_values.notifications", 2);
+            options.setExperimentalOption("prefs", prefs);
             webDriver = new ChromeDriver(options);
             logger.info("Chrome is started");
         }else if ("ChromeHeadless".equals(browserName)){
