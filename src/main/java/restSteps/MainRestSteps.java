@@ -6,19 +6,34 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
+import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 
 public class MainRestSteps {
-    final private String baseUrlPrivat = "http://api.privatbank.ua";
+    final private String baseUrl = "https://socialsched.com.itex.agency/robot/posts/view";
+    String stringToken = "UjJEMkBzb2NpYWxzaGVkLmxvY3xBcnRvby1EZXRvb19DLTNQTzo=";
 
-    public RequestSpecification setBaseUrlForPrivatApi() {
-        RestAssured.baseURI = baseUrlPrivat + "/p24api/pubinfo";
-        return RestAssured.given().queryParam("json").queryParam("exchange").queryParam("coursid", 5);
+
+    public RequestSpecification setBaseUrlWithToken(String addToUrl, String stringToken) {
+        RestAssured.baseURI = baseUrl + addToUrl;
+        return RestAssured.given().accept("application/json").contentType("application/json").header("Authorization", "Bearer "+ stringToken);
     }
 
-    public Response getRequestToPrivatApi() {
-        return setBaseUrlForPrivatApi().request(Method.GET);
+    public RequestSpecification testTest(String addToUrl, String stringToken) {
+        RestAssured.baseURI = baseUrl + addToUrl;
+        return RestAssured.given().accept("application/json").contentType("application/json").param("socials[]");
     }
+
+    public RequestSpecification setUrlForTest() {
+        RestAssured.baseURI = baseUrl;
+        return RestAssured.given()
+                .accept("application/json")
+                .contentType("application/json")
+                .header("Authorization", "Basic "+ stringToken)
+                .param("socials", "facebook")
+                .param("limit", "1");
+    }
+
 
     public void checkResponseCode(Response response, int expectedStatusCode) {
         // Get the status code from the Response. In case of
@@ -35,21 +50,12 @@ public class MainRestSteps {
         System.out.println("Response Body is =>  " + responseBody.asString());
         return responseBody;
     }
-    public Response getRequestToPrivatApiAndVerifyStatusCode() {
-        Response response = getRequestToPrivatApi();
-        checkResponseCode(response, 200);
-        return response;
-    }
 
-    public String getValueForKeyFromResponseAsJsonObject(Response response, String key) {
-        // First get the JsonPath object instance from the Response interface
-        JsonPath jsonPathEvaluator = response.jsonPath();
-        // specified by JsonPath: City (Note: You should not put $. in the Java code)
-        String value = jsonPathEvaluator.get(key);
-        if (value == null) {
-            Assert.fail("There is no key '" + key + "' in Json response ");
-        }
-        return value;
+
+    public ResponseBody getResponseBodyPrettyPrint(Response response) {
+        ResponseBody responseBody = response.getBody();
+        responseBody.prettyPrint();
+        return responseBody;
     }
 
 
