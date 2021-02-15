@@ -1,12 +1,10 @@
 package restSteps;
 
 import io.restassured.RestAssured;
-import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
-import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 
 public class MainRestSteps {
@@ -19,12 +17,8 @@ public class MainRestSteps {
         return RestAssured.given().accept("application/json").contentType("application/json").header("Authorization", "Bearer "+ stringToken);
     }
 
-    public RequestSpecification testTest(String addToUrl, String stringToken) {
-        RestAssured.baseURI = baseUrl + addToUrl;
-        return RestAssured.given().accept("application/json").contentType("application/json").param("socials[]");
-    }
 
-    public RequestSpecification setUrlForTest() {
+    public RequestSpecification setUrlForFacebook() {
         RestAssured.baseURI = baseUrl;
         return RestAssured.given()
                 .accept("application/json")
@@ -47,7 +41,7 @@ public class MainRestSteps {
         // Now let us print the body of the message to see what response
         // we have recieved from the server
         ResponseBody responseBody = response.getBody();
-        System.out.println("Response Body is =>  " + responseBody.asString());
+//        System.out.println("Response Body is =>  " + responseBody.asString());
         return responseBody;
     }
 
@@ -56,6 +50,12 @@ public class MainRestSteps {
         ResponseBody responseBody = response.getBody();
         responseBody.prettyPrint();
         return responseBody;
+    }
+
+    public static JsonPath getJsonPath(Response response) {
+        String complete = response.asString();
+        JsonPath js = new JsonPath(complete);
+        return js;
     }
 
 
