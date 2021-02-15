@@ -27,7 +27,7 @@ public class ActionsWithWebElements {
 
     public void clickOnElement(WebElement webElement){
         try{
-            webDriverWait40.until(ExpectedConditions.elementToBeClickable(webElement));
+            webDriverWait20.until(ExpectedConditions.elementToBeClickable(webElement));
             webElement.click();
         } catch (Exception e){
             printErrorAndStopTest(e);

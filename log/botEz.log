@@ -888,3 +888,9 @@ Session ID: cd434190091e4ee54f1b694090fac157
 2021-10-02 14:24:28   INFO [libs.ActionsWithWebElements] : 44B/HY7v>`zStn[& was inputted into element
 2021-10-02 14:24:40   INFO [libs.ActionsWithWebElements] : My first post was inputted into element
 2021-10-02 14:25:01   INFO [webTest.facebookTest.CreateFacebookPost] : Chrome closed
+2021-15-02 11:25:20   INFO [webTest.facebookTest.CreateFacebookPost] : Chrome will be started
+2021-15-02 11:25:24   INFO [webTest.facebookTest.CreateFacebookPost] : Chrome is started
+2021-15-02 11:25:31   INFO [libs.ActionsWithWebElements] : minatonski@gmail.com was inputted into element
+2021-15-02 11:25:31   INFO [libs.ActionsWithWebElements] : 44B/HY7v>`zStn[& was inputted into element
+2021-15-02 11:26:37  ERROR [libs.ActionsWithWebElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id="mount_0_0"]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div[3]/div/div[2]/div/div/div/div[1]/div/div[1]/span' (tried for 40 second(s) with 500 milliseconds interval)
+2021-15-02 11:26:38   INFO [webTest.facebookTest.CreateFacebookPost] : Chrome closed
