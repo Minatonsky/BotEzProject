@@ -3,19 +3,14 @@ package apiTest;
 import com.google.gson.Gson;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import jdk.nashorn.internal.parser.JSONParser;
-import org.json.JSONObject;
 import org.junit.Test;
 import restSteps.MainRestSteps;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Map;
 
 public class TestRestAssured {
 
@@ -36,20 +31,57 @@ public class TestRestAssured {
     public void testParsJson() throws IOException{
 
         Gson gson = new Gson();
-        Reader reader = Files.newBufferedReader(Paths.get("user.json"));
-        TypeDTO[] myTypes = gson.fromJson(reader, TypeDTO[].class);
-        System.out.println(gson.toJson(myTypes));
+        Reader reader = Files.newBufferedReader(Paths.get(jPath));
+        PostModelDTO[] myTypes = gson.fromJson(reader, PostModelDTO[].class);
+
+        int a = 1;
 //        System.out.println(ItemDTO.class.name);
 
 
 
     }
-    class TypeDTO
+
+    class PostModelDTO
     {
-        ArrayList<ItemDTO> files;
+        PostDTO post;
+        UserDTO user;
+        ArrayList<PostTypeDTO> post_type;
+        ArrayList<FileDTO> files;
+        ArrayList<UserSocialsDTO> user_socials;
     }
-    class ItemDTO
+
+    class PostDTO
+    {
+        int id;
+        String status;
+        String title;
+        String body;
+        String hashtag;
+        String website;
+        String date_publication_start;
+    }
+
+    class UserDTO
+    {
+        String email;
+    }
+
+    class PostTypeDTO
+    {
+        String social_name;
+        String post_type;
+    }
+
+    class FileDTO
     {
         String name;
+        String uri;
+    }
+
+    class UserSocialsDTO
+    {
+        String social_name;
+        String login;
+        String password;
     }
 }
