@@ -3,6 +3,8 @@ package apiTest;
 import com.google.gson.Gson;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.json.JSONObject;
+import org.junit.Test;
 import restSteps.MainRestSteps;
 
 
@@ -10,6 +12,7 @@ public class TestRestAssured {
 
     MainRestSteps mainRestSteps = new MainRestSteps();
     Gson gson = new Gson();
+    JSONObject requestParams = new JSONObject();
 
 
     public  PostModelDTO[] getFacebookPost() {
@@ -21,6 +24,18 @@ public class TestRestAssured {
 
         return myTypes;
 
+    }
+
+    @Test
+    public void postScenarioExecutingResult(String postId, String socialName, String publicationState, String message){
+        RequestSpecification request = mainRestSteps.setUrlForScenarioExecutingResult();
+        requestParams.put("post_id", postId);
+        requestParams.put("social_name", socialName);
+        requestParams.put("publication_state", publicationState);
+        requestParams.put("message", message);
+        request.body(requestParams.toMap());
+        Response response = request.post();
+        mainRestSteps.getResponseBody(response);
     }
 
 

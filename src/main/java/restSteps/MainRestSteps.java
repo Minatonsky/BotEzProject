@@ -8,24 +8,27 @@ import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 
 public class MainRestSteps {
-    final private String baseUrl = "https://socialsched.com.itex.agency/robot/posts/view";
+    final private String baseUrl = "https://app.socialsched.com";
     String stringToken = "UjJEMkBzb2NpYWxzaGVkLmxvY3xBcnRvby1EZXRvb19DLTNQTzo=";
 
 
-    public RequestSpecification setBaseUrlWithToken(String addToUrl, String stringToken) {
-        RestAssured.baseURI = baseUrl + addToUrl;
-        return RestAssured.given().accept("application/json").contentType("application/json").header("Authorization", "Bearer "+ stringToken);
-    }
-
 
     public RequestSpecification setUrlForFacebook() {
-        RestAssured.baseURI = baseUrl;
+        RestAssured.baseURI = baseUrl + "/robot/posts/view";
         return RestAssured.given()
                 .accept("application/json")
                 .contentType("application/json")
                 .header("Authorization", "Basic "+ stringToken)
                 .param("socials", "facebook")
                 .param("limit", "1");
+    }
+
+    public RequestSpecification setUrlForScenarioExecutingResult(){
+        RestAssured.baseURI = baseUrl + "/robot/posts/record-posting-post";
+        return RestAssured.given()
+                .accept("application/json")
+                .contentType("application/json")
+                .header("Authorization", "Basic "+ stringToken);
     }
 
 
@@ -41,7 +44,7 @@ public class MainRestSteps {
         // Now let us print the body of the message to see what response
         // we have recieved from the server
         ResponseBody responseBody = response.getBody();
-//        System.out.println("Response Body is =>  " + responseBody.asString());
+        System.out.println("Response Body is =>  " + responseBody.asString());
         return responseBody;
     }
 
