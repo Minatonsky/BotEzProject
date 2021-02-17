@@ -22,35 +22,24 @@ public class FacebookPage extends ParentPage{
     @FindBy(id = "pass")
     private WebElement passInput;
 
+    @FindBy(xpath = ".//*[@class='_9ay7']")
+    private WebElement loginPassError;
+
     @FindBy(name = "login")
     private WebElement loginButton;
 
-    @FindBy(xpath = ".//*[text()='Create a Text Story']")
-    private WebElement createTextStory;
-
-    @FindBy(xpath = ".//*[text()='Create a Photo Story']")
-    private WebElement createPhotoStory;
-
-    @FindBy(xpath = ".//input[@accept='image/*,image/heif,image/heic']")
-    private WebElement addPhotoInput;
-
-    @FindBy(xpath = ".//textarea")
-    private WebElement textArea;
-
-    @FindBy(xpath = ".//*[text()='Share to Story']")
-    private WebElement shareStoryButton;
-
-    @FindBy(xpath = "//*[@id=\"mount_0_0\"]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div[3]/div/div[2]/div/div/div/div[1]/div/div[1]/span")
-    private WebElement addPostInput;
-
-    @FindBy(xpath = "//*[@id=\"mount_0_0\"]/div/div[1]/div/div[4]/div/div/div[1]/div/div[2]/div/div/div/form/div/div[1]/div/div/div[2]/div[1]/div[1]/div[1]/div/div/div/div/div[2]/div")
+    @FindBy(xpath = ".//*[@class='rq0escxv datstx6m k4urcfbm a8c37x1j']//.//*[@class='notranslate _5rpu' and @role='textbox']")
     private WebElement postTextField;
 
-    @FindBy(xpath = ".//*[text()='Опублікувати']")
+    @FindBy(xpath = ".//*[@class='d2edcug0 hpfvmrgz qv66sw1b c1et5uql rrkovp55 a8c37x1j keod5gw0 nxhoafnm aigsh9s9 d3f4x2em fe6kdd0r mau55g9w c8b282yb iv3no6db jq4qci2q a3bd9o3v lrazzd5p bwm1u5wc']//.//*[@class='a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5']")
     private WebElement postSubmitButton;
 
-    @FindBy(xpath = "//*[text()=\"Створити допис\"]")
-    private WebElement test;
+    @FindBy(xpath = ".//*[@class='m9osqain a5q79mjw jm1wdb64 k4urcfbm']//.//*[@class='a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7']")
+    private WebElement sharePostButton;
+
+    @FindBy(xpath = ".//*[@class='dwxx2s2f dicw6rsg kady6ibp rs0gx3tq']/.//input[@type='file']")
+    private WebElement addPictureToPostButton;
+
 
     public void enterLogin(String login){
         actionsWithWebElements.enterTextToElement(emailInput, login);
@@ -58,44 +47,32 @@ public class FacebookPage extends ParentPage{
     public void enterPass(String pass){
         actionsWithWebElements.enterTextToElement(passInput, pass);
     }
+
     public void clickLoginButton(){
         actionsWithWebElements.clickOnElement(loginButton);
     }
 
-    public void goToCreateStories(){
-        super.openPage("https://www.facebook.com/stories/create");
-    }
-
-    public void clickOnCreateTextStory(){
-        actionsWithWebElements.clickOnElement(createTextStory);
-    }
-    public void clickOnCreatePhotoStory(){
-        actionsWithWebElements.clickOnElement(createPhotoStory);
-    }
-
-    public void enterTextInTextArea(String text){
-        actionsWithWebElements.enterTextToElement(textArea, text);
-    }
-    public void clickOnSherStoryButton(){
-        actionsWithWebElements.clickOnElement(shareStoryButton);
-    }
-
-    public void addPhoto(){
-        actionsWithWebElements.addFileByJs(addPhotoInput, "src/test.jpg");
-    }
-
-    public void clickOnAddPostInput(){
-        actionsWithWebElements.clickOnElement(addPostInput);
-    }
-
     public void enterTextOnPostField(String text){
-        actionsWithWebElements.enterTextToElement(postTextField, text);
+        if (!text.isEmpty()) {
+            actionsWithWebElements.enterTextToElement(postTextField, text);
+        }
     }
 
     public void clickOnPostSubmitButton(){
         actionsWithWebElements.clickOnElement(postSubmitButton);
     }
 
+    public void clickOnSharePostButton(){
+        actionsWithWebElements.clickOnElement(sharePostButton);
+    }
+
+    public void addImageOnPost(String pathFile){
+        actionsWithWebElements.addFileByJs(addPictureToPostButton, pathFile);
+    }
+
+    public boolean isLoginPassErrorDisplayed(){
+        return actionsWithWebElements.isElementDisplay(loginPassError);
+    }
 
 
 }

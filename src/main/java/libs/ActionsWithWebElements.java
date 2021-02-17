@@ -261,8 +261,8 @@ public class ActionsWithWebElements {
     public void addFileByJs(WebElement webElement, String path){
         try{
             JavascriptExecutor js = (JavascriptExecutor) webDriver;
-            js.executeScript("arguments[0].setAttribute('style', arguments[1])",webDriver.findElement(By.xpath("//input[@type='file']")), "0");
-            js.executeScript("arguments[0].setAttribute('class', arguments[1])", webDriver.findElement(By.xpath("//input[@accept='image/*,image/heif,image/heic']/../div[@role='button'][1]")), "a");
+            js.executeScript("arguments[0].setAttribute('style', arguments[1])", webElement, "0");
+            js.executeScript("arguments[0].setAttribute('class', arguments[1])", webElement, "a");
             webElement.sendKeys(path);
         } catch (Exception e){
             printErrorAndStopTest(e);

@@ -1,37 +1,34 @@
 package restSteps;
 
 import io.restassured.RestAssured;
-import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
-import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 
 public class MainRestSteps {
-    final private String baseUrl = "https://socialsched.com.itex.agency/robot/posts/view";
+    final private String baseUrl = "https://app.socialsched.com";
     String stringToken = "UjJEMkBzb2NpYWxzaGVkLmxvY3xBcnRvby1EZXRvb19DLTNQTzo=";
 
 
-    public RequestSpecification setBaseUrlWithToken(String addToUrl, String stringToken) {
-        RestAssured.baseURI = baseUrl + addToUrl;
-        return RestAssured.given().accept("application/json").contentType("application/json").header("Authorization", "Bearer "+ stringToken);
-    }
 
-    public RequestSpecification testTest(String addToUrl, String stringToken) {
-        RestAssured.baseURI = baseUrl + addToUrl;
-        return RestAssured.given().accept("application/json").contentType("application/json").param("socials[]");
-    }
-
-    public RequestSpecification setUrlForTest() {
-        RestAssured.baseURI = baseUrl;
+    public RequestSpecification setUrlForFacebook() {
+        RestAssured.baseURI = baseUrl + "/robot/posts/view";
         return RestAssured.given()
                 .accept("application/json")
                 .contentType("application/json")
                 .header("Authorization", "Basic "+ stringToken)
                 .param("socials", "facebook")
                 .param("limit", "1");
+    }
+
+    public RequestSpecification setUrlForScenarioExecutingResult(){
+        RestAssured.baseURI = baseUrl + "/robot/posts/record-posting-post";
+        return RestAssured.given()
+                .accept("application/json")
+                .contentType("application/json")
+                .header("Authorization", "Basic "+ stringToken);
     }
 
 
@@ -56,6 +53,12 @@ public class MainRestSteps {
         ResponseBody responseBody = response.getBody();
         responseBody.prettyPrint();
         return responseBody;
+    }
+
+    public static JsonPath getJsonPath(Response response) {
+        String complete = response.asString();
+        JsonPath js = new JsonPath(complete);
+        return js;
     }
 
 

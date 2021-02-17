@@ -3,85 +3,83 @@ package apiTest;
 import com.google.gson.Gson;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.json.JSONObject;
 import org.junit.Test;
 import restSteps.MainRestSteps;
 
-import java.io.IOException;
-import java.io.Reader;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
 
 public class TestRestAssured {
 
     MainRestSteps mainRestSteps = new MainRestSteps();
-    static String jPath = "src/data2.json";
+    Gson gson = new Gson();
+    JSONObject requestParams = new JSONObject();
 
-    @Test
-    public void getFacebookPost() {
 
-        RequestSpecification request = mainRestSteps.setUrlForTest();
+    public  PostModelDTO[] getFacebookPost() {
+
+        RequestSpecification request = mainRestSteps.setUrlForFacebook();
         Response response = request.get();
-        mainRestSteps.getResponseBodyPrettyPrint(response);
+        String json = mainRestSteps.getResponseBody(response).asString();
+        PostModelDTO[] myTypes = gson.fromJson(json, PostModelDTO[].class);
+
+        return myTypes;
 
     }
-
 
     @Test
-    public void testParsJson() throws IOException{
-
-        Gson gson = new Gson();
-        Reader reader = Files.newBufferedReader(Paths.get(jPath));
-        PostModelDTO[] myTypes = gson.fromJson(reader, PostModelDTO[].class);
-
-        int a = 1;
-//        System.out.println(ItemDTO.class.name);
-
-
-
+    public void postScenarioExecutingResult(String postId, String socialName, String publicationState, String message){
+        RequestSpecification request = mainRestSteps.setUrlForScenarioExecutingResult();
+        requestParams.put("post_id", postId);
+        requestParams.put("social_name", socialName);
+        requestParams.put("publication_state", publicationState);
+        requestParams.put("message", message);
+        request.body(requestParams.toMap());
+        Response response = request.post();
+        mainRestSteps.getResponseBody(response);
     }
 
-    class PostModelDTO
+
+    public class PostModelDTO
     {
-        PostDTO post;
-        UserDTO user;
-        ArrayList<PostTypeDTO> post_type;
-        ArrayList<FileDTO> files;
-        ArrayList<UserSocialsDTO> user_socials;
+        public PostDTO post;
+        public UserDTO user;
+        public PostTypeDTO[] post_type;
+        public FileDTO[] files;
+        public UserSocialsDTO[] user_socials;
     }
 
-    class PostDTO
+    public class PostDTO
     {
-        int id;
-        String status;
-        String title;
-        String body;
-        String hashtag;
-        String website;
-        String date_publication_start;
+        public int id;
+        public String status;
+        public String title;
+        public String body;
+        public String hashtag;
+        public String website;
+        public String date_publication_start;
     }
 
-    class UserDTO
+    public class UserDTO
     {
-        String email;
+        public String email;
     }
 
-    class PostTypeDTO
+    public class PostTypeDTO
     {
-        String social_name;
-        String post_type;
+        public String social_name;
+        public String post_type;
     }
 
-    class FileDTO
+    public class FileDTO
     {
-        String name;
-        String uri;
+        public String name;
+        public String uri;
     }
 
-    class UserSocialsDTO
+    public class UserSocialsDTO
     {
-        String social_name;
-        String login;
-        String password;
+        public String social_name;
+        public String login;
+        public String password;
     }
 }
