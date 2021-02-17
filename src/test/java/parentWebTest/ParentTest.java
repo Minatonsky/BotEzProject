@@ -93,4 +93,11 @@ public class ParentTest {
             Assert.fail("Can`t init driver");
         }
     }
+    protected void checkAC(String message, boolean actual, boolean expected){
+        if (actual != expected){
+            logger.error("AC failed: " + message);
+        }
+        Assert.assertEquals(message,expected,actual);
+        logger.info("AC passed");
+    }
 }

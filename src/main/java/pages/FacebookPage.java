@@ -22,6 +22,9 @@ public class FacebookPage extends ParentPage{
     @FindBy(id = "pass")
     private WebElement passInput;
 
+    @FindBy(xpath = ".//*[@class='_9ay7']")
+    private WebElement loginPassError;
+
     @FindBy(name = "login")
     private WebElement loginButton;
 
@@ -44,27 +47,32 @@ public class FacebookPage extends ParentPage{
     public void enterPass(String pass){
         actionsWithWebElements.enterTextToElement(passInput, pass);
     }
+
     public void clickLoginButton(){
         actionsWithWebElements.clickOnElement(loginButton);
     }
 
     public void enterTextOnPostField(String text){
-        actionsWithWebElements.enterTextToElement(postTextField, text);
+        if (!text.isEmpty()) {
+            actionsWithWebElements.enterTextToElement(postTextField, text);
+        }
     }
 
     public void clickOnPostSubmitButton(){
         actionsWithWebElements.clickOnElement(postSubmitButton);
     }
+
     public void clickOnSharePostButton(){
         actionsWithWebElements.clickOnElement(sharePostButton);
     }
-    public void clickOnAddPictureToPostButton(){
-        actionsWithWebElements.clickOnElement(addPictureToPostButton);
-    }
+
     public void addImageOnPost(String pathFile){
         actionsWithWebElements.addFileByJs(addPictureToPostButton, pathFile);
     }
 
+    public boolean isLoginPassErrorDisplayed(){
+        return actionsWithWebElements.isElementDisplay(loginPassError);
+    }
 
 
 }
