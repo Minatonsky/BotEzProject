@@ -73,23 +73,26 @@ public class CreateFacebookPost extends ParentTest {
 
             waitABit(5);
             facebookPage.clickOnSharePostButton();
-            facebookPage.enterTextOnPostField(body);
+            facebookPage.enterTextOnPostField(title + "\n" + body);
 
-            for (int i=0; i<myTypes[0].files.length; i++){
+            if (!myTypes[0].files.toString().isEmpty()) {
+                for (int i = 0; i < myTypes[0].files.length; i++) {
 
-                this.imageName = myTypes[0].files[i].name;
+                    this.imageName = myTypes[0].files[i].name;
 
-                this.imageUri = myTypes[0].files[i].uri;
+                    this.imageUri = myTypes[0].files[i].uri;
 
-                URL url = new URL("https://app.socialsched.com" + imageUri);
-                BufferedImage img = ImageIO.read(url);
-                File file = new File(imageName + ".jpg");
-                ImageIO.write(img, "jpg", file);
+                    URL url = new URL("https://app.socialsched.com" + imageUri);
+                    BufferedImage img = ImageIO.read(url);
+                    File file = new File("src/tempData/" + imageName + ".jpg");
+                    String path = file.getAbsolutePath();
+                    ImageIO.write(img, "jpg", file);
 
-                facebookPage.addImageOnPost("C:\\BotEzProject\\" + imageName + ".jpg");
-                waitABit(5);
+                    facebookPage.addImageOnPost(path);
+                    waitABit(5);
+                    file.delete();
+                }
             }
-
 
             facebookPage.clickOnPostSubmitButton();
             this.publicationState = "SENT";
