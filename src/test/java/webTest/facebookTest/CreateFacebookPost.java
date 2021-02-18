@@ -84,11 +84,11 @@ public class CreateFacebookPost extends ParentTest {
 
                     URL url = new URL("https://app.socialsched.com" + imageUri);
                     BufferedImage img = ImageIO.read(url);
-                    File file = new File("C:\WorkSpace\" + imageName + ".jpg");
+                    File file = new File("C:\\WorkSpace\\" + imageName + ".jpg");
                     
                     ImageIO.write(img, "jpg", file);
 
-                    facebookPage.addImageOnPost("C:\WorkSpace\" + imageName + ".jpg");
+                    facebookPage.addImageOnPost("C:\\WorkSpace\\" + imageName + ".jpg");
                     waitABit(5);
                     file.delete();
                 }
