@@ -84,7 +84,7 @@ public class CreateFacebookPost extends ParentTest {
 
                     URL url = new URL("https://app.socialsched.com" + imageUri);
                     BufferedImage img = ImageIO.read(url);
-                    File file = new File("src/tempData/" + imageName + ".jpg");
+                    File file = new File(imageName + ".jpg");
                     String path = file.getAbsolutePath();
                     ImageIO.write(img, "jpg", file);
 
