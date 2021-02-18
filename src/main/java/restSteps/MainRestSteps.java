@@ -9,7 +9,7 @@ import org.junit.Assert;
 
 public class MainRestSteps {
     final private String baseUrl = "https://app.socialsched.com";
-    String stringToken = "UjJEMkBzb2NpYWxzaGVkLmxvY3xBcnRvby1EZXRvb19DLTNQTzo=";
+    String stringToken = "";
 
 
 
